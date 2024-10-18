@@ -1,3 +1,54 @@
-body {
-    
+
+
+.body {
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
 }
+
+.judul h2 {
+    font-family: "Delius Swash Caps", cursive;
+}
+
+.all{
+    background-color: #ffeddd;
+}
+.navv {
+    background-color: #DEAC80;
+}
+
+navbar-brand h2 {
+    font-family: "Delius Swash Caps", cursive;
+}
+
+.navbar-brand {
+    font-family: "Caveat";
+}
+.slogan{
+    font-family: "Caveat";
+    color: #FED8B1 
+}
+
+.text-center mb-6{
+    font-family: "Delius Swash Caps";
+}
+
+.card-text{
+    font-family: "Fraunces";
+}
+.text-center{
+    font-family: "Roboto Slab";
+}
+
+.card{
+    box-shadow: 0 6px 15px #4e4e4e;
+}
+
+.menuu{
+    border-radius: 10;
+}
+.belii {
+    border: 1px solid #000 !important;
+    background-color: white !important;
+}
+
