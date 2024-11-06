@@ -34,6 +34,11 @@
                     <label class="form-label">DESKRIPSI</label>
                     <input class="form-control" type="text" name="deskripsi"></input>
                 </div>
+
+                <div>
+                    <label class="form-label">GAMBAR</label>
+                    <input class="form-control" type="file" name="gambar"></input>
+                </div>
                 <div>
                     <button type="submit" name="submit" class="btn">SUBMIT</button>
                 </div>
@@ -42,9 +47,15 @@
             <?php
             if (isset($_POST['submit'])){
                 $id_kategori=$_POST['kategori'];
-                $name=$_post['nama_produk'];
-                $harga=$_post['harga_produk'];
-                $deskripsi=$_post['deskripsi'];
+                $name=$_POST['nama_produk'];
+                $harga=$_POST['harga_produk'];
+                $deskripsi=$_POST['deskripsi'];
+
+                $gambarproduk=$_FILES['gambar']["name"];
+                $tempname=$_FILES["gambar"]["tmp_name"];
+                $folder="../img/".$gambarproduk;
+                if(move_uploaded_file ($tempname,$folder))
+                echo'<img src="'.$folder.'">';
             }
             ?>
          </div>
